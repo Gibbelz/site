@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+body {
+    background-color: black;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    margin: 0;
+}
+
+.ico{
+    margin: 0 20px;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    transition: all 0.3s;
+    border-radius: 50%;
+}
+.VK{
+    background-image: url(VK.png);
+}
+.Telegram{
+    background-image: url(Telegram.png);
+}
+.Discord{
+    background-image: url(Discord.png);
+}
+
+.VK:hover{
+    background-color: #4a76a8;
+}
+.Telegram:hover{
+    background-color: #29aaed;
+}
+.Discord:hover{
+    background-color: #6f75b0;
+}
+.pic {
+    position: absolute;
+}
+nav {
+    position: absolute;
+    bottom: 1%;
+    
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
