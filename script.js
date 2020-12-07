@@ -48,11 +48,23 @@ function selectRandom(){
 }
 let player = document.getElementById("audioplayer");
 let audio = document.getElementById("audioplayer");
+let slider = document.getElementById("myRange");
 
 player.autoplay=true;
 player.addEventListener("ended", selectRandom);
 
 change_gif.src = BASE_GIF_URL + lst[getRandomInt(0, lst.length)];
+
+function play_audio(task) {
+	if(task == 'play'){
+		$("#audioplayer").trigger('play');
+	}
+	if(task == 'stop'){
+		$("#audioplayer").trigger('pause');
+		$("#audioplayer").prop("currentTime",0);
+	}
+}
+
 selectRandom();
 player.play();
-//Song_name.innerHTML = getRandomSong().replace('.mp3', '')
+window.setInterval(function(){audio.volume = slider.value / 100;}, 10);

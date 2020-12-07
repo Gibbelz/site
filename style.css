@@ -62,3 +62,8 @@ nav {
     justify-content: space-around;
     align-items: center;
 }
+.slider {
+	left: 1%;
+    bottom: 0;
+    position: absolute;
+}
